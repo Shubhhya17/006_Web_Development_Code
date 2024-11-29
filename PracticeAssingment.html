@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <style>
+        div {
+            min-width: 100px;
+            min-height: 100px;
+            border: 1px solid black;
+            padding: 30px;
+            margin: 10px;
+            text-align: center;
+            line-height: 100px;
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        #parent {
+            background-color: lightblue;
+        }
+
+        #child {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="grandparent">Grandparent
+        <div id="parent">Parent
+            <div id="child">Child</div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelector("#grandparent")
+        .addEventListener('click', () => {
+            alert("Grandparent clicked");
+        });
+
+        document.querySelector("#parent")
+        .addEventListener('mouseover', () => {
+            alert("Mouse over Parent");
+        });
+
+        document.querySelector("#child")
+        .addEventListener('click', () => {
+            alert("Child clicked");
+        });
+
+        document.querySelector("#child")
+        .addEventListener('mouseover', () => {
+            alert("Mouse over Child");
+        });
+    </script>
+</body>
+</html>

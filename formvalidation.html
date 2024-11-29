@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <script>
+        function validate()
+        {
+            var uname=document.getElementById("un");
+            var pwd=document.getElementById("pw");
+
+            if(uname.value=="" || pwd.value=="")
+            {
+                
+                return false;
+            }
+            else{
+                return true;
+            }
+        }
+    </script>
+   
+</head>
+<body>
+        <form action="succeseful.html" onsubmit="return validate()">
+        username:<input type="text" id="un"><br><br>
+        Password:<input type="password" id="pw"><br><br>
+        <input type="submit" value="Login">
+        </form>
+</body>
+</html>

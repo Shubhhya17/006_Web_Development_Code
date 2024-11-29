@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+        <script>
+            function parent(){
+                var a ="Parent data....";
+
+                function child(){
+                    console.log(a);
+                }
+                return child;
+            }
+
+            var res=parent();
+            console.log(res);
+            res();
+        </script>
+</body>
+</html>

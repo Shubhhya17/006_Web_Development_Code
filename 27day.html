@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll Event Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            width: 100%;
+            height: 60px;
+            background-color: lightblue;
+            color: white;
+            text-align: center;
+            line-height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            transition: background-color 0.3s;
+        }
+        .content {
+            margin-top: 80px;
+            padding: 20px;
+            height: 2000px; /* Just to make the page scrollable */
+        }
+    </style>
+</head>
+<body>
+    <div class="header" id="header">Scroll to Change My Color</div>
+    <div class="content">
+        Scroll down to see the effect!
+    </div>
+
+    <script>
+        // Select the header element
+        const header = document.getElementById('header');
+
+        // Function to update header background color based on scroll position
+        function handleScroll() {
+            // Get the scroll position
+            const scrollTop = window.scrollY;
+            
+            // Change background color based on scroll position
+            if (scrollTop > 100) {
+                header.style.backgroundColor = 'lightcoral';
+            } else {
+                header.style.backgroundColor = 'lightblue';
+            }
+        }
+
+        // Add scroll event listener
+        window.addEventListener('scroll', handleScroll);
+    </script>
+</body>
+</html>

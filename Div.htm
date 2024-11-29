@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Divs</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .main-div {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background: #d6d2d2;
+        }
+
+        
+        .vertical-div1 {
+            background-color: rgb(186, 52, 223);
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            height: 100px;
+            width:500px;
+            text-align: center;
+        }
+        .vertical-div2 {
+            background-color: lightblue;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            height: 100px;
+            width:500px;
+            text-align: center;
+        }
+        .vertical-div3 {
+            background-color: rgb(201, 231, 83);
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #ccc;
+            height: 100px;
+            width:500px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="main-div">
+        <div class="Ver">
+            <p style="color: red;" >This Color Name is Red</p>
+        <p style="color: rgb(3, 165, 46);" >Text Color With Hex Value (3, 165,46)</p>
+        <p style="color: rgb(10, 10, 247);" >Text Color is RGB Value(10,10,247)</p>
+        <p style="color: rgb(10, 10, 247);" >Text Color is HSL Value(34,54,65)</p>
+        </div>
+        <div class="vertical-div1   " >
+            <h1>Section 1</h1>This Section Has Pink Background</div>
+
+        <div class="vertical-div2" > <h1>Section 2</h1>This Section Has blue Background</div>
+
+        <div class="vertical-div3"> <h1>Section 3</h1>This Section Has yellow Background</div>
+    </div>
+</body>
+</html>

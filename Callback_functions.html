@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+        <script>
+
+            /////////////////// callback function
+
+
+                // function originalFunction(fp){
+                //     fp();
+                // }
+                // function dammy()
+                // {
+                //     console.log("welcome to callbackfunctions");
+                // }
+                // originalFunction(dammy);
+
+
+//////////////////Example 2
+                // function first(aa){
+                //     console.log("welcome");
+                //     second();
+                // }
+                // function second(){
+                //     console.log("Bye Bye");
+                // }
+                // first(second);
+
+
+                let human={
+                    fname:"Navdeep",
+                    lname:"Aluri",
+
+                };
+                let fullname = function(city,state)
+                {
+                    console.log(this.fname+"" +city,+" "+state);
+                }
+
+                let result=fullname.bind(human,"Mumbai","Maharastra");
+                console.log(result);
+                result();
+
+        </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin: 0;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .square {
+            width: 200px;
+            height: 200px;
+            background: #3498db;
+            position: relative;
+            animation: moveColor 5s infinite;
+        }
+        @keyframes moveColor {
+            0%, 100% { left: 0; background: #3498db; }
+            /* 0%, 100% { right: 0; background: #3498db; } */
+            50% { left: calc(40vw - 40px); background: #e74c3c; }
+            /* 50% { right: calc(50vw - 50px); background: #e74c3c; } */
+        }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <!-- <div class="square"></div> -->
+</body>
+</html>

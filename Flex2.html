@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Items in Div</title>
+    <style>
+        .container {
+            gap:40px;
+            display: flex;
+            width: 600px;
+            padding: 30px;
+            margin: 10px;
+            border: 2px solid #000;
+        }
+        .container2 {
+            gap:40px;
+            display: flex;
+            flex-direction: row-reverse;
+            width: 600px;
+            padding: 30px;
+            margin: 10px;
+            border: 2px solid #000;
+        }
+        .container3 {
+            gap:40px;
+            display:flow-root;
+            flex-direction: column;
+            width: 600px;
+            padding: 30px;
+            margin: 10px;
+            border: 2px solid #000;
+        }
+        .item {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 2px solid #000000;
+            background-color: rgb(216, 175, 50);
+        }
+        .item:last-child {
+            margin-bottom: 0; /* Remove margin from the last item */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>Flex-direction: row</p>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        
+    </div>
+    <div class="container2">
+        <p>Flex-direction: reverse</p>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        
+    </div>
+    <div class="container3">
+        <p>Flex-direction: column</p>
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+        
+    </div>
+</body>
+</html>
