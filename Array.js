@@ -19,4 +19,10 @@
 // let arr9 = [10,20,30,40,50];
 // let arr3 = arr9.reduce((firstElement, nextElement)=>{
 //     console.log(arr3.includes(30));
-// 
+
+function shubh( a,b ){
+    this.prop1 = a;
+    this.prop2 = b;
+}
+const shubham = new shubh(10, 20);
+console.log(shubham);
