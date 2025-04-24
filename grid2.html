@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+    .parent{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        justify-items: center;
+        align-items: center;
+        border: 2px solid black;
+    }
+
+    .parent>p{
+        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+        align-items: center;
+    }
+    .parent>p:nth-child(5){
+        justify-self: start;
+    }
+    .parent>p:nth-child(4){
+        justify-self: center;
+    }
+    .parent>p:nth-child(3){
+        justify-self: center;
+        align-self: end;
+    }
+    .parent>p:nth-child(2){
+        justify-self: start;
+        /* align-self: start; */
+    }
+    .parent>p:nth-child(5){
+        justify-self: center;
+        /* align-self: start; */
+    }
+    .parent>p:nth-child(8){
+        justify-self: end;
+        /* align-self: start; */
+    }
+    .parent>p:nth-child(1){
+        justify-self: start;
+        /* align-self: start; */
+    }
+    .parent>p:nth-child(7){
+        justify-self: end;
+        /* align-self: start; */
+    }
+
+
+</style>
+
+<body>
+    <div class="parent">
+        <p>p1</p>
+        <p>p2</p>
+        <p>p3</p>
+        <p>p4</p>
+        <p>p5</p>
+        <p>p6</p>
+        <p>p7</p>
+        <p>p8</p>
+        <p>p9</p>
+    </div>
+</body>
+</html>
