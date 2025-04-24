@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is data table.</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+    <h2>This is an example of a data table.</h2>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Disability Category</th> <!-- Spanning 2 rows -->
+                <th rowspan="2">Participants</th> <!-- Spanning 2 rows -->
+                <th rowspan="2">Ballots Completed</th> <!-- Spanning 2 rows -->
+                <th rowspan="2">Ballots Incomplete/ Terminated</th> <!-- Spanning 2 rows -->
+                <th colspan="2">Result</th> <!-- Spanning 2 columns -->
+            </tr>
+            <tr>
+                <td rowspan=""><b>Accuracy</b></td>
+                <td rowspan=""><b>Time to complete</b></td>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="">Blind</td>
+                <td rowspan="">Row 1 & 2 Col 2</td>
+                <td rowspan="">Row 1 & 2 Col 3</td>
+                <td rowspan="">Row 1 & 2 Col 4</td>
+                <td>Row 1 Col 5.1</td>
+                <td>Row 1 Col 5.2</td
+            </tr>
+            <tr>
+                <td>Low Vision</td>
+                <td>Row 2 Col 5.2</td>
+                <td>Row 2 Col 5.2</td>
+                <td>Row 2 Col 5.2</td>
+                <td>Row 2 Col 5.2</td>
+                <td>Row 2 Col 5.2</td>
+            </tr>
+            <tr>
+                <td rowspan="">Dexterity</td>
+                <td rowspan="">Row 3 & 4 Col 2</td>
+                <td rowspan="">Row 3 & 4 Col 3</td>
+                <td rowspan="">Row 3 & 4 Col 4</td>
+                <td>Row 3 Col 5.1</td>
+                <td>Row 3 Col 5.2</td>
+            </tr>
+            <tr>
+                <td>Mobility</td>
+                <td>Row 4 Col 5.2</td>
+                <td>Row 4 Col 5.2</td>
+                <td>Row 4 Col 5.2</td>
+                <td>Row 4 Col 5.2</td>
+                <td>Row 4 Col 5.2</td>
+            </tr>
+        </tbody>
+    </table>
+</center>
+
+</body>
+</html>
