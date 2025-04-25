@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    .master{
+        display: flex;
+    }
+    .first{
+        flex: 2;
+    }
+    .second{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+    .second-a{
+        flex:1;
+        background: red;
+    }
+    .second-b{
+        flex:1;
+    }
+    img{
+        width: 600px;
+        height: 600px;
+    }
+
+</style>
+
+<body>
+    <div class="master">
+        <div class="first">
+            <img src="https://cdn.pixabay.com/photo/2023/11/02/11/32/woman-8360359_1280.jpg">
+        </div>
+        <div class="second"> 
+            <div class="second-a"> A</div>
+            <div class="second-b">B</div>
+        </div>
+    </div>
+</body>
+</html>
